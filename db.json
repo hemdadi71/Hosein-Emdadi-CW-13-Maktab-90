@@ -18,7 +18,7 @@
       "name": "امدادی",
       "Expretise": {
         "id": 2,
-        "name": " قلب"
+        "name": "متخصص قلب"
       },
       "workTime": [
         "شنبه",
@@ -31,7 +31,7 @@
       "name": "محتشمی",
       "Expretise": {
         "id": 3,
-        "name": " اطفال"
+        "name": "پزشک اطفال"
       },
       "workTime": [
         "شنبه",
@@ -44,7 +44,7 @@
       "name": "محمدی امامی",
       "Expretise": {
         "id": 4,
-        "name": " داخلی"
+        "name": "متخصص داخلی"
       },
       "workTime": [
         "شنبه",
@@ -57,7 +57,20 @@
       "name": "حبیبی",
       "Expretise": {
         "id": 5,
-        "name": " مغز و اعصاب"
+        "name": "مغز و اعصاب"
+      },
+      "workTime": [
+        "شنبه",
+        "یکشنبه",
+        "جمعه"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "حبیبی",
+      "Expretise": {
+        "id": 5,
+        "name": "مغز و اعصاب"
       },
       "workTime": [
         "شنبه",
@@ -90,6 +103,30 @@
       "phoneNumber": "654654",
       "day": "یکشنبه",
       "id": 4
+    },
+    {
+      "docId": "4",
+      "firstName": "Isaac",
+      "lastName": "Miranda",
+      "phoneNumber": "+1 (405) 213-6096",
+      "day": "جمعه",
+      "id": 5
+    },
+    {
+      "docId": "5",
+      "firstName": "Gloria",
+      "lastName": "Wright",
+      "phoneNumber": "+1 (781) 972-6216",
+      "day": "یکشنبه",
+      "id": 6
+    },
+    {
+      "docId": "1",
+      "firstName": "Cally",
+      "lastName": "Russo",
+      "phoneNumber": "+1 (224) 713-7637",
+      "day": "جمعه",
+      "id": 7
     }
   ]
 }

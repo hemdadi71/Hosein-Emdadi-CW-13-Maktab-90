@@ -9,25 +9,28 @@
   <body class="bg-main">
     <div id="app">
       <header
-        class="flex bg-header items-center text-white justify-between px-3 py-2">
+        class="flex bg-header items-center text-white justify-between px-3">
         <div>
           <img src="src/assets/img/Ellipse 1.png" alt="icon" />
         </div>
-        <div class="flex gap-40 font-semibold">
-          <div class="relative flex flex-col items-center">
-            <p class="cursor-pointer">تخصص ها</p>
+        <div class="flex gap-40 font-semibold absolute z-20 top-6 left-1/2 transform -translate-x-1/2">
+          <div id="titleParent" class="relative flex flex-col items-center h-[70px]">
+            <p id="title" class="cursor-pointer">تخصص ها</p>
             <ul
-              class="absolute space-y-5 px-3 py-3 bg-gray-500 w-36 top-[3.5rem] rounded-b-md shadow-md hidden">
+              id="ul"
+              class="absolute z-20 space-y-5 px-3 py-3 bg-gray-500 w-36 top-[3.2rem] rounded-b-md shadow-md hidden">
               <li class="cursor-pointer hover:text-cardBG">دندانپزشک</li>
               <li class="cursor-pointer hover:text-cardBG">پزشک اطفال</li>
               <li class="cursor-pointer hover:text-cardBG">متخصص قلب</li>
               <li class="cursor-pointer hover:text-cardBG">متخصص داخلی</li>
+              <li class="cursor-pointer hover:text-cardBG">مغز و اعصاب</li>
             </ul>
           </div>
           <p class="cursor-pointer">سوالات متداول</p>
         </div>
         <div class="w-[250px]">
           <input
+            id="search"
             class="rounded-full px-4 py-1 outline-none border-none w-full text-gray-800"
             type="search"
             placeholder="جستجو ..." />

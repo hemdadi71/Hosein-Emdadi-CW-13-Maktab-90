@@ -3,7 +3,7 @@ import { GetData } from '../GetApi'
 const RenderModal = data => {
   const modal = document.getElementById('modal')
   modal.innerHTML = ''
-  GetData(Base_URL, `nobat?docId=${data.id}`).then(response => {
+  return GetData(Base_URL, `nobat?docId=${data.id}`).then(response => {
     const modalContent = `
       <div class="flex gap-5 items-center">
         <div class="w-24 h-24">
@@ -53,28 +53,29 @@ const RenderModal = data => {
           <div class="flex gap-5 flex-wrap justify-center">
           ${[
             ...data.workTime.map(item => {
-            //   if (response.find(res => res.day === item)) {
-            //     return `<button
-            //   type="submit"
-            //   name="day"
-            //   disabled
-            //   class="bg-gray-500 shadow-md px-3 py-1 text-white rounded-md text-2xl">
-            //   ${item}
-            // </button>`
-            //   } else {
+              if (response.find(res => res.day === item)) {
+                return `<button
+                type="submit"
+                name="day"
+                disabled
+                class="bg-gray-400 shadow-md px-3 py-1 text-white rounded-md text-2xl">
+                ${item}
+              </button>`
+              } else {
                 return `<button
               type="submit"
               name="day"
               class="bg-cardButton shadow-md px-3 py-1 text-white rounded-md text-2xl">
               ${item}
             </button>`
-              // }
+              }
             }),
           ].join(' ')}
           </div>
           </form>
           </div>`
     modal.innerHTML = modalContent
+    return response
   })
 }
 
