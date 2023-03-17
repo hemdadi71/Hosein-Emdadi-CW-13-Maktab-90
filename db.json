@@ -3,34 +3,93 @@
     {
       "id": 1,
       "name": "سرانی",
-      "Expretise": { "id": 1, "name": "دندانپزشک" },
-      "workTime": ["یکشنبه", "شنبه", "جمعه"]
+      "Expretise": {
+        "id": 1,
+        "name": "دندانپزشک"
+      },
+      "workTime": [
+        "شنبه",
+        "یکشنبه",
+        "جمعه"
+      ]
     },
     {
       "id": 2,
       "name": "امدادی",
-      "Expretise": { "id": 2, "name": "متخصص قلب" },
-      "workTime": ["یکشنبه", "شنبه", "جمعه"]
+      "Expretise": {
+        "id": 2,
+        "name": " قلب"
+      },
+      "workTime": [
+        "شنبه",
+        "یکشنبه",
+        "جمعه"
+      ]
     },
     {
       "id": 3,
       "name": "محتشمی",
-      "Expretise": { "id": 3, "name": "متخصص اطفال" },
-      "workTime": ["یکشنبه", "شنبه", "جمعه"]
+      "Expretise": {
+        "id": 3,
+        "name": " اطفال"
+      },
+      "workTime": [
+        "شنبه",
+        "یکشنبه",
+        "جمعه"
+      ]
     },
     {
       "id": 4,
       "name": "محمدی امامی",
-      "Expretise": { "id": 4, "name": "متخصص داخلی" },
-      "workTime": ["یکشنبه", "شنبه", "جمعه"]
+      "Expretise": {
+        "id": 4,
+        "name": " داخلی"
+      },
+      "workTime": [
+        "شنبه",
+        "یکشنبه",
+        "جمعه"
+      ]
     },
     {
       "id": 5,
       "name": "حبیبی",
-      "Expretise": { "id": 5, "name": "جراح مغز و اعصاب" },
-      "workTime": ["یکشنبه", "شنبه", "جمعه"]
+      "Expretise": {
+        "id": 5,
+        "name": " مغز و اعصاب"
+      },
+      "workTime": [
+        "شنبه",
+        "یکشنبه",
+        "جمعه"
+      ]
     }
   ],
-  
-  "nobat": []
+  "nobat": [
+    {
+      "docId": "2",
+      "firstName": "Barrett",
+      "lastName": "Sargent",
+      "phoneNumber": "+1 (995) 688-7295",
+      "day": "شنبه",
+      "id": 2
+    },
+    {
+      "docId": "3",
+      "firstName": "ffsdf",
+      "lastName": "fsdf",
+      "phoneNumber": "654654",
+      "day": "شنبه",
+      "id": 3
+    },
+    {
+      "docId": "3",
+      "firstName": "ffsdf",
+      "lastName": "fsdf",
+      "phoneNumber": "654654",
+      "day": "یکشنبه",
+      "id": 4
+    }
+  ]
 }

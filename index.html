@@ -33,10 +33,12 @@
             placeholder="جستجو ..." />
         </div>
       </header>
-      <article class="grid grid-cols-5 mt-10 mx-10 gap-10 place-items-cente">
-        <div
+      <article
+        id="article"
+        class="grid grid-cols-5 mt-10 mx-10 gap-10 place-items-cente">
+        <!-- <div
           id="cart"
-          class="flex flex-col px-3 py-6 w-[200px] h-[235px] rounded-md bg-cardBG items-center gap-5">
+          class="flex flex-col px-3 py-6 w-[200px] h-[235px] rounded-md bg-cardBG items-center gap-5 relative">
           <div class="w-14 h-16">
             <img
               class="w-full h-full rounded-full"
@@ -53,18 +55,18 @@
               <span>دندانپزشک</span>
             </div>
           </div>
-          <div>
+          <div class="absolute bottom-[1rem] left-[-2.5rem] w-full">
             <button
-              class="rounded-full bg-cardButton text-white shadow-md px-5 py-1">
+              class="rounded-full bg-cardButton text-white shadow-md px-5 py-1 absolute">
               رزرو پزشک
             </button>
           </div>
-        </div>
+        </div> -->
       </article>
       <div
         id="modal"
-        class="fixed w-[800px] h-[400px] bg-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-10 z-20 flex flex-col gap-14 pb-[25.75rem]">
-        <div class="flex gap-5 items-center">  
+        class="fixed w-[800px] h-[400px] bg-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-10 z-20 hidden flex-col gap-14 pb-[25.75rem]">
+        <div class="flex gap-5 items-center">
           <div class="w-24 h-24">
             <img
               class="rounded-full"
@@ -84,47 +86,32 @@
         </div>
         <div>
           <div class="pb-5 text-2xl flex justify-center">
-            <h1>رزرو  نوبت</h1>
+            <h1>رزرو نوبت</h1>
           </div>
-          <form action="#" class="bg-gray-200 py-4 px-4 rounded-md flex flex-col gap-6">
+          <form
+            id="form"
+            action="#"
+            class="bg-gray-200 py-4 px-4 rounded-md flex flex-col gap-6">
             <div class="flex gap-7">
-              <input class="w-1/2 px-3 py-1 rounded-md outline-none border-none" id="firstName" type="text" placeholder="نام"/>
-              <input class="w-1/2 px-3 py-1 rounded-md outline-none border-none" id="firstName" type="text" placeholder="نام خانوادگی"/>
+              <input
+                class="w-1/2 px-3 py-1 rounded-md outline-none border-none"
+                id="firstName"
+                type="text"
+                placeholder="نام" />
+              <input
+                class="w-1/2 px-3 py-1 rounded-md outline-none border-none"
+                id="firstName"
+                type="text"
+                placeholder="نام خانوادگی" />
             </div>
             <div class="mr-36">
-              <input class="w-2/3 px-3 py-1 rounded-md outline-none border-none" id="firstName" type="tel" placeholder="شماره موبایل بیمار"/>
+              <input
+                class="w-2/3 px-3 py-1 rounded-md outline-none border-none"
+                id="firstName"
+                type="tel"
+                placeholder="شماره موبایل بیمار" />
             </div>
             <div class="flex gap-5 flex-wrap justify-center">
-              <button
-                type="submit"
-                class="bg-cardButton shadow-md px-3 py-1 text-white rounded-md text-2xl">
-                شنبه
-              </button>
-              <button
-                type="submit"
-                class="bg-cardButton shadow-md px-3 py-1 text-white rounded-md text-2xl">
-                شنبه
-              </button>
-              <button
-                type="submit"
-                class="bg-cardButton shadow-md px-3 py-1 text-white rounded-md text-2xl">
-                شنبه
-              </button>
-              <button
-                type="submit"
-                class="bg-cardButton shadow-md px-3 py-1 text-white rounded-md text-2xl">
-                شنبه
-              </button>
-              <button
-                type="submit"
-                class="bg-cardButton shadow-md px-3 py-1 text-white rounded-md text-2xl">
-                شنبه
-              </button>
-              <button
-                type="submit"
-                class="bg-cardButton shadow-md px-3 py-1 text-white rounded-md text-2xl">
-                شنبه
-              </button>
               <button
                 type="submit"
                 class="bg-cardButton shadow-md px-3 py-1 text-white rounded-md text-2xl">
@@ -136,7 +123,7 @@
       </div>
       <div
         id="modal-bg"
-        class="w-full h-full absolute z-10 inset-0 backdrop-blur-sm bg-slate-300 bg-opacity-30"></div>
+        class="w-full h-full absolute z-10 inset-0 backdrop-blur-sm bg-slate-300 bg-opacity-30 hidden"></div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
